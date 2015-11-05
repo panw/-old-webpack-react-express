@@ -1,5 +1,5 @@
 {
-  "name": "webpack-starter",
+  "name": "react-express-webpack-starter",
   "version": "1.0.0",
   "description": "Basic starter code for Webpack, Express, and Babel",
   "main": "server.js",
