@@ -1,7 +1,7 @@
 {
   "name": "react-express-webpack-starter",
   "version": "1.0.0",
-  "description": "Basic starter code for Webpack, Express, and Babel",
+  "description": "Basic starter code for Webpack, React, Express, and Babel",
   "main": "server.js",
   "scripts": {
     "build:dev": "webpack-dev-server --config webpack-hot-dev-server.config.js --inline --hot --progress --colors",
@@ -10,7 +10,8 @@
   "keywords": [
     "webpack",
     "express",
-    "babel"
+    "babel",
+    "react"
   ],
   "author": "Pan W",
   "dependencies": {
