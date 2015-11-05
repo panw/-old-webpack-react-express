@@ -3,8 +3,8 @@ import React from 'react'
 import {render} from 'react-dom'
 import {createHistory} from 'history'
 import {Router, Route, Link} from 'react-router'
+import Home from './components/home'
 
-const history = createHistory();
 class App extends React.Component{
 	render() {
 		return (
@@ -17,16 +17,8 @@ class App extends React.Component{
 	}
 }
 
-class Home extends React.Component {
-	render() {
-		return (
-			<div>I am the Home</div>
-		)
-	}
-}
-
 render((
-	<Router history={history}>
+	<Router history={createHistory()}>
 		<Route path="/" component={App}>
 			<Route path="home" component={Home}/>
 		</Route>
