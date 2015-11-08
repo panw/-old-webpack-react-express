@@ -18,7 +18,7 @@ var html = fs.readFileSync(path.resolve(__dirname, "./src/index.html"), "utf-8")
 html = html.replace("SCRIPT_URL", `${scriptUrl}/bundle.js`)
 
 // Serve index.html for root
-app.get("/", function(req, res) { 
+app.get("/*", function(req, res) { 
 	res.contentType = "text/html; charset=utf8"
 	res.end(html)
 })
